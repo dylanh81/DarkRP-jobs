@@ -1,0 +1,8 @@
+If you want these jobs in your server do the following:
+
+1. Go to your server directory computer or hosted i don't know what you have.
+2. Goto gamemodes\darkrp\gamemode\config
+3. And then you just drag and drop "jobrelated.lua" Into the folder. 
+     and the jobs should be in the server!
+4. You could also copy them from github and paste them into the file 
+   (But you should just stick with the drag and drop idea)
