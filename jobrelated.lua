@@ -512,7 +512,7 @@ TEAM_HOBO    = TEAM_HOBO     or -1
 TEAM_COOK    = TEAM_COOK     or -1
 
 -- Door groups
-AddDoorGroup("Cops and Mayor only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR)
+AddDoorGroup("Cops and Mayor only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_AGENT, TEAM_CORRUPT, TEAM_DETECTIVE, TEAM_CHIEF)
 AddDoorGroup("Gundealer only", TEAM_GUN)
 
 
