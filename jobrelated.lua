@@ -481,6 +481,81 @@ TEAM_DRUG = DarkRP.createJob("Drug Dealer", {
 	category = "Gangsters",
 })
 
+TEAM_TUSTAV = DarkRP.createJob("Tustav Cartel Member", {
+    color = Color(255, 104, 0, 255),
+	model = {"models/player/gman_high.mdl"},
+	description = [[]],
+	weapons = {""},
+	command = "tustav",
+	max = 5,
+	salary = 50,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Mexican Cartel",
+})
+
+TEAM_TUSTAV = DarkRP.createJob("Tustav Cartel Medic", {
+    color = Color(255, 104, 0, 255),
+	model = {"models/player/gman_high.mdl"},
+	description = [[]],
+	weapons = {""},
+	command = "tustavmedic",
+	max = 5,
+	salary = 50,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Mexican Cartel",
+})
+
+TEAM_TUSTAVHITMAN = DarkRP.createJob("Tustav Cartel Hitman", {
+    color = Color(255, 104, 0, 255),
+	model = {"models/player/gman_high.mdl"},
+	description = [[]],
+	weapons = {""},
+	command = "tustavhitman",
+	max = 5,
+	salary = 50,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Mexican Cartel",
+})
+
+TEAM_TUSTAV = DarkRP.createJob("Tustav Cartel Thief", {
+    color = Color(255, 104, 0, 255),
+	model = {"models/player/gman_high.mdl"},
+	description = [[]],
+	weapons = {""},
+	command = "tustavthief",
+	max = 5,
+	salary = 50,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Mexican Cartel",
+})
+
+TEAM_TUSTAV = DarkRP.createJob("Tustav Cartel Leader", {
+    color = Color(255, 104, 0, 255),
+	model = {"models/player/gman_high.mdl"},
+	description = [[]],
+	weapons = {""},
+	command = "tustavleader",
+	max = 5,
+	salary = 50,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	category = "Mexican Cartel",
+})
+
 if not DarkRP.disabledDefaults["modules"]["hungermod"] then
     TEAM_COOK = DarkRP.createJob("Cook", {
         color = Color(209, 199, 9, 255),
@@ -537,6 +612,7 @@ GAMEMODE.CivilProtection = {
 
 -- Hitman team
 DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_TUSTAVHITMAN)
 
 -- Demote groups
 DarkRP.createDemoteGroup("Cops", {TEAM_POLICE, TEAM_CHIEF})
@@ -596,4 +672,14 @@ DarkRP.createCategory{
     canSee = fp{fn.Id, true},
     sortOrder = 255,
 }
+
+DarkRP.createCategory{
+    name = "Mexican Cartel",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(255, 104, 0, 255),
+    canSee = fp{fn.Id, true},
+    sortOrder = 255,
+}
+
 
